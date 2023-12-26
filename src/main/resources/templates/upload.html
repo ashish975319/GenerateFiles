@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8">
+	<title>File Upload</title>
+</head>
+
+<body>
+
+	<h2 class="text-center">File Upload</h2>
+
+
+	<form action="products/fileUpload" method="post" enctype="multipart/form-data">
+		<label for="productName">Product Name: </label>
+		<input type="text" id="productName" name="productName" required><br>
+
+		<label for="description">Description:</label>
+		<textarea id="description" name="description" required></textarea><br>
+
+
+
+
+
+		<label for="file">Choose File:</label>
+		<input type="file" id="file" name="file" accept=".csv, .pdf, .xls, .xlsx" required><br>
+		<button type="submit">Upload</button>
+
+		<hr>
+		<div class="input-group mb-3">
+			<div class="input-group-prepend">
+				<span class="input-group-text">Upload</span>
+			</div>
+			<div class="custom-file">
+				<input type="file" class="custom-file-input" id="inputGroupFile01">
+
+			</div>
+		</div>
+
+
+
+
+	</form>
+</body>
+
+</html>
